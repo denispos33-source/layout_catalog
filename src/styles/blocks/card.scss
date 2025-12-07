@@ -26,6 +26,7 @@
     transform: scale(1.2);
   }
 
+
   &__image-wrapper {
     display: flex;
     justify-content: center;
@@ -50,12 +51,12 @@
     color: $color-text-main;
 
     transition:
-      color $transition-fast;
+    color $transition-fast
+    ;
+  }
 
-
-    &:hover {
-      color: $color-text-title-hover;
-    }
+  &:hover &__title {
+    color: $color-text-title-hover;
   }
 
   &__code {
