@@ -14,12 +14,12 @@ body {
 }
 
 .catalog {
-  padding: 50px 40px;
+  padding: $catalog-padds;
 
   display: grid;
   justify-content: center;
 
-  gap: 46px 48px;
+  gap: $catalog-gaps;
 
   grid-template-columns: repeat(1, $card-width);
 }

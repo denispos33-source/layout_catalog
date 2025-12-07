@@ -15,11 +15,15 @@
 
   transition:
     box-shadow $transition-fast,
-    border-color $transition-fast;
+    border-color $transition-fast,
+    transform $transition-fast;
+
+    transform-origin: center;
 
   &:hover {
     box-shadow: $shadow-card-hover;
     border-color: transparent;
+    transform: scale(1.2);
   }
 
   &__image-wrapper {
@@ -44,6 +48,14 @@
     line-height: 18px;
 
     color: $color-text-main;
+
+    transition:
+      color $transition-fast;
+
+
+    &:hover {
+      color: $color-text-title-hover;
+    }
   }
 
   &__code {
